@@ -9,7 +9,7 @@ A small Jetpack Compose portfolio project showcasing interactive UI patterns, an
 - Simple in-memory navigation for demos
 
 ## How to run
-1. Open in Android Studio (Arctic Fox+).
+1. Open in Android Studio.
 2. Run the `app` module on an emulator or device.
 
 ## Status
