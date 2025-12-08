@@ -3,14 +3,6 @@
   <img src="assets/banner.svg" alt="Compose UI Playground banner" width="100%"/>
 </p>
 
-<p align="center">
-  <picture>
-    <source srcset="assets/banner.svg" type="image/svg+xml">
-    <img src="assets/banner.png" alt="Compose UI Playground banner" width="900" />
-  </picture>
-</p>
-
-
 # Compose UI Playground
 > Interactive Jetpack Compose demos — animations, layouts, gestures, and a small design system.
 
