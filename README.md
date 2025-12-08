@@ -47,5 +47,83 @@ Sectioned lists with headers, cards, and preview support.
 
 ---
 
-### 1️⃣ Clone the project
+1️⃣ Clone the project
 git clone https://github.com/rishi-ritesh/compose-ui-playground.git
+
+2️⃣ Open in Android Studio
+Use Android Studio Giraffe or newer.
+
+3️⃣ Run
+Launch the app module on an emulator or device.
+
+📂 Project Structure
+
+composeplayground/
+├── app/
+│    └── playground/
+│         ├── demos/
+│         │    ├── animations/
+│         │    ├── layouts/
+│         │    ├── gestures/
+│         │    ├── components/
+│         ├── navigation/
+│         ├── ui/
+├── ui/theme/
+└── assets/
+├── gifs/
+├── banner.svg
+└── banner.png
+
+
+🧭 Roadmap
+Animation Demos
+
+AnimatedVisibility basics
+
+State transitions
+
+Decay + Spring physics animations
+
+Motion path animations
+
+Layout Demos
+
+Staggered grid (custom layout)
+
+Flow / wrap layout
+
+SubcomposeLayout samples
+
+Gesture Demos
+
+Drag & drop reordering
+
+Swipe actions
+
+Pinch-to-zoom + pan
+
+Components Showcase
+
+Advanced TextField
+
+Custom TopAppBars
+
+Card variants
+
+Chip components
+
+Tooling
+
+In-app code preview
+
+Screenshot generator
+
+Demo comparison tools
+
+🤝 Contributions
+
+As this is a personal playground project, contributions are optional — but feel free to fork it or open ideas for new demos.
+
+📌 Status
+
+🚧 Work in progress — new demos are added step-by-step to ensure the project remains clean, scalable, and portfolio-ready.
