@@ -1,5 +1,6 @@
 package com.rishiritesh.composeplayground.playground
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -77,7 +78,7 @@ fun CatalogScreen(
                         val screen = when (demo.id) {
                             "animated_button" -> PlaygroundScreen.AnimatedButton
                             "complex_lazy" -> PlaygroundScreen.ComplexLazy
-                            "animation_basics" -> PlaygroundScreen.AnimatedButton // placeholder
+                            "animation_basics" -> PlaygroundScreen.AnimationBasics
                             "visibility_animation" -> PlaygroundScreen.ComplexLazy // placeholder
                             else -> PlaygroundScreen.Catalog
                         }
@@ -90,9 +91,24 @@ fun CatalogScreen(
 }
 
 private fun groupDemos(demos: List<DemoItem>) = mapOf(
-    "Basic Demos" to demos.filter { it.id in listOf("animated_button", "complex_lazy") },
-    "Animation Demos" to demos.filter { it.id in listOf("animation_basics", "visibility_animation") }
+    "Animations" to demos.filter { it.id in listOf(
+        "animated_button",
+        "animation_basics",
+        "visibility_animation"
+    ) },
+
+    "Custom Layouts" to demos.filter { it.id in listOf(
+        "complex_lazy"
+    ) },
+
+    // Use explicit emptyList<String>() so Kotlin can infer the generic type.
+    "Gestures & Interactions" to demos.filter { it.id in emptyList<String>() },
+
+    "Components" to demos.filter { it.id in emptyList<String>() },
+
+    "Design System" to demos.filter { it.id in emptyList<String>() }
 )
+
 
 @Preview(showBackground = true)
 @Composable

@@ -10,6 +10,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
 import com.rishiritesh.composeplayground.playground.CatalogScreen
 import com.rishiritesh.composeplayground.playground.demos.animations.animatedbutton.AnimatedButtonScreen
+import com.rishiritesh.composeplayground.playground.demos.animations.animation_basics.AnimationBasicsScreen
 import com.rishiritesh.composeplayground.playground.demos.layouts.complexlazy.ComplexLazyScreen
 import com.rishiritesh.composeplayground.playground.ui.DemoTopBar
 
@@ -23,8 +24,12 @@ fun PlaygroundNavHost(
         composable(PlaygroundScreen.Catalog.route) {
             CatalogScreen(onOpenDemo = { screen ->
                 when (screen) {
-                    PlaygroundScreen.AnimatedButton -> navController.navigate(PlaygroundScreen.AnimatedButton.route)
-                    PlaygroundScreen.ComplexLazy -> navController.navigate(PlaygroundScreen.ComplexLazy.route)
+                    PlaygroundScreen.AnimatedButton ->
+                        navController.navigate(PlaygroundScreen.AnimatedButton.route)
+                    PlaygroundScreen.ComplexLazy ->
+                        navController.navigate(PlaygroundScreen.ComplexLazy.route)
+                    PlaygroundScreen.AnimationBasics ->
+                        navController.navigate(PlaygroundScreen.AnimationBasics.route)
                     else -> {}
                 }
             })
@@ -51,6 +56,18 @@ fun PlaygroundNavHost(
                 }
             ) { innerPadding ->
                 ComplexLazyScreen(modifier = Modifier.padding(innerPadding))
+            }
+        }
+
+        composable(PlaygroundScreen.AnimationBasics.route) {
+            Scaffold(
+                topBar = {
+                    DemoTopBar(title = PlaygroundScreen.AnimationBasics.title) {
+                        navController.navigateUp()
+                    }
+                }
+            ) { innerPadding ->
+                AnimationBasicsScreen(modifier = Modifier.padding(innerPadding))
             }
         }
     }

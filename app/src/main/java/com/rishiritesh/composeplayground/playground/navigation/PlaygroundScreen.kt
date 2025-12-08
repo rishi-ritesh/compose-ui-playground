@@ -11,5 +11,5 @@ sealed class PlaygroundScreen(val route: String, val title: String = "") {
     object ComplexLazy : PlaygroundScreen("complex_lazy", "Complex LazyColumn")
 
     // Add new screens here as objects:
-    // object AnimationBasics : PlaygroundScreen("animation_basics", "Animation Basics")
+     object AnimationBasics : PlaygroundScreen("animation_basics", "Animation Basics")
 }

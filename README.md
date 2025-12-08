@@ -22,8 +22,13 @@ This project grows in tiny, iterative steps — perfect for learning and for sho
 
 ### 🎥 UI Demos
 
-#### ✨ Animated Button
-Morphing width, color transitions, and a ViewModel-driven finite state machine.
+### ✨ Animated Button
+Morphing width, state transitions, and color animations.
+
+<p align="center">
+  <img src="assets/gifs/animated_button.gif" width="280"/>
+</p>
+
 
 <img src="assets/gifs/animated_button.gif" width="260"/>
 
