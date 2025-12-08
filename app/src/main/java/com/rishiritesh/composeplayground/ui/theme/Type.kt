@@ -1,34 +1,64 @@
 package com.rishiritesh.composeplayground.ui.theme
 
 import androidx.compose.material3.Typography
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Set of Material typography styles to start with
-val Typography = Typography(
-    bodyLarge = TextStyle(
+/**
+ * App-wide typography scale.
+ * Clean, modern, slightly enhanced version of Material3 defaults.
+ */
+val AppTypography = Typography(
+
+    // Headlines
+    headlineLarge = Typography().headlineLarge.copy(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
+        fontWeight = FontWeight.Bold,
+        fontSize = 28.sp
     ),
-    labelSmall = TextStyle(
+    headlineMedium = Typography().headlineMedium.copy(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 24.sp
+    ),
+    headlineSmall = Typography().headlineSmall.copy(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 20.sp
+    ),
+
+    // Titles
+    titleLarge = Typography().titleLarge.copy(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.SemiBold,
+    ),
+    titleMedium = Typography().titleMedium.copy(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
+    ),
+    titleSmall = Typography().titleSmall.copy(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+    ),
+
+    // Body text
+    bodyLarge = Typography().bodyLarge.copy(
+        fontFamily = FontFamily.Default,
+        fontSize = 16.sp
+    ),
+    bodyMedium = Typography().bodyMedium.copy(
+        fontFamily = FontFamily.Default,
+        fontSize = 14.sp
+    ),
+    bodySmall = Typography().bodySmall.copy(
+        fontFamily = FontFamily.Default,
+        fontSize = 12.sp
+    ),
+
+    // Labels (buttons, chips)
+    labelLarge = Typography().labelLarge.copy(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium
     )
-    */
 )

@@ -1,4 +1,4 @@
-package com.rishiritesh.composeplayground.playground.demos.complexlazy
+package com.rishiritesh.composeplayground.playground.demos.layouts.complexlazy
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
