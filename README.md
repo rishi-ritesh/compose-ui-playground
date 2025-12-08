@@ -29,9 +29,6 @@ Morphing width, state transitions, and color animations.
   <img src="assets/gifs/animated_button.gif" width="280"/>
 </p>
 
-
-<img src="assets/gifs/animated_button.gif" width="260"/>
-
 #### 📚 Complex LazyColumn
 Sectioned lists with headers, cards, and preview support.
 
